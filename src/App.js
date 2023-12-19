@@ -8,13 +8,17 @@ function App() {
       <div className="container">
         <h1>Weather App</h1>
         <Weather />
-        <a
-          href="https://github.com/prakadw-dev/react-final-app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github Link
-        </a>
+        <footer>
+          This website is for a partice purposes and open-sourced on{" "}
+          <a
+            href="https://github.com/prakadw-dev/react-final-app"
+            target="_blank"
+            rel="noreferrer"
+            className="github-link"
+          >
+            Github
+          </a>
+        </footer>
       </div>
     </div>
   );
