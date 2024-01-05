@@ -10,9 +10,9 @@ export default function WeatherForecast(props) {
   }
 
   const apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
-  let lon = 40.7;
-  let lat = 74;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+  let longtitude = props.coordinates.lon;
+  let latitude = props.coordinates.lat;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longtitude}&appid=${apiKey}`;
 
   Axios.get(apiUrl).then(handleResponse);
   return (
