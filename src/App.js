@@ -13,7 +13,7 @@ function App() {
           <a
             href="https://github.com/prakadw-dev/react-final-app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="github-link"
           >
             Github
